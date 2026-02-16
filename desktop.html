@@ -143,7 +143,7 @@
 					localStorage.setItem('lang',langc[navigator.language]);
 				else
 					localStorage.setItem('lang','en-US');
-				window.location.href='';">Default language of the browser</a>
+				window.location.href='';">Default</a>
 			
 		</list>
 		<a class="power" onclick="$(this).addClass('show')">
@@ -156,7 +156,7 @@
 				window.location.href='';
 				" win12_title="Toggle language"></i> -->
 			<i class="bi bi-power" onclick="setTimeout(() => {window.location='shutdown.html';}, 200);" win12_title="关闭"></i>
-			<i class="bi bi-arrow-counterclockwise" onclick="setTimeout(() => {window.location='reload.html';}, 200);" win12_title="重启"></i>
+			<i class="bi bi-arrow-counterclockwise" onclick="setTimeout(() => {window.location='reload.html';}, 200);" win12_title="重回"></i>
 		</a>
 	</div>
 
@@ -179,7 +179,7 @@
 				<svg viewBox="0,0,257,344" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" overflow="hidden"><defs><clipPath id="user-clip0"><rect x="382" y="195" width="257" height="344" /></clipPath><linearGradient x1="351.462" y1="233.56" x2="669.496" y2="500.422" gradientUnits="userSpaceOnUse" spreadMethod="reflect" id="user-fill1"><stop offset="0" stop-color="#A964C8" /><stop offset="0.35" stop-color="#A964C8" /><stop offset="0.87" stop-color="#2D8AD5" /><stop offset="1" stop-color="#2D8AD5" /></linearGradient><linearGradient x1="351.462" y1="233.56" x2="669.496" y2="500.422" gradientUnits="userSpaceOnUse" spreadMethod="reflect" id="user-fill2"><stop offset="0" stop-color="#A964C8" /><stop offset="0.35" stop-color="#A964C8" /><stop offset="0.87" stop-color="#2D8AD5" /><stop offset="1" stop-color="#2D8AD5" /></linearGradient></defs><g clip-path="url(#user-clip0)" transform="translate(-382 -195)"><path d="M637.755 433.872C642.215 515.221 579.577 537.983 508.011 537.983 436.444 537.983 376.676 507.833 383.513 437.11 383.109 425.234 389.59 414.133 398.634 409.891 413.82 402.768 444.753 402.936 507.484 402.997 570.214 403.058 609.164 402.279 621.521 407.947 633.878 413.614 638.011 424.609 637.755 433.872Z" fill="url(#user-fill1)" fill-rule="evenodd" /><path d="M422 285C422 235.847 461.623 196 510.5 196 559.377 196 599 235.847 599 285 599 334.153 559.377 374 510.5 374 461.623 374 422 334.153 422 285Z" fill="url(#user-fill2)" fill-rule="evenodd" /></g></svg>
 			</div>
 			<p style="width: 100%;text-align: center;margin: -50px 0 20px 0;font-size: 30px;">Administrator</p>
-			<input type="text" class="input" win12_title="搜索" placeholder="在这里输入你要搜索的内容" onfocus="hide_startmenu();
+			<input type="text" class="input" win12_title="搜索" placeholder="输入搜索内容" onfocus="hide_startmenu();
 				$('#search-btn').addClass('show');
 				$('#search-win').addClass('show-begin');
 				setTimeout(() => {
@@ -188,42 +188,42 @@
 				$('#search-input').focus();" data-i18n-attr="placeholder" data-i18n-key="sch-ph">
 			<input-before class="bi bi-search"></input-before>
 			<list>
-				<p class="text" data-i18n="stmenu-avlb">可用</p>
-				<a oncontextmenu="return showcm(event, 'smlapp', ['setting', '设置'])" onclick="openapp('setting');hide_startmenu();">
+				<p class="text" data-i18n="stmenu-avlb">支持</p>
+				<a oncontextmenu="return showcm(event, 'smlapp', ['setting', '设定'])" onclick="openapp('setting');hide_startmenu();">
 					<img src="icon/setting.svg">
-					<p data-i18n="setting.name">设置</p>
+					<p data-i18n="setting.name">设定</p>
 				</a>
-				<a oncontextmenu="return showcm(event, 'smlapp', ['explorer', '文件资源管理器'])" onclick="openapp('explorer');hide_startmenu();">
+				<a oncontextmenu="return showcm(event, 'smlapp', ['explorer', '文件'])" onclick="openapp('explorer');hide_startmenu();">
 					<img src="icon/explorer.svg">
-					<p data-i18n="explorer.name">文件资源管理器</p>
+					<p data-i18n="explorer.name">文件</p>
 				</a>
-				<a oncontextmenu="return showcm(event, 'smlapp', ['calc', '计算器'])" onclick="openapp('calc');hide_startmenu();">
+				<a oncontextmenu="return showcm(event, 'smlapp', ['calc', '计算'])" onclick="openapp('calc');hide_startmenu();">
 					<img src="icon/calc.svg">
-					<p data-i18n="calc.name">计算器</p>
+					<p data-i18n="calc.name">计算</p>
 				</a>
 				<a oncontextmenu="return showcm(event, 'smlapp', ['run', '运行'])" onclick="openapp('run');hide_startmenu();">
 					<img src="icon/run.svg">
 					<p data-i18n="run.name">运行</p>
 				</a>
-				<a oncontextmenu="return showcm(event, 'smlapp', ['about', '关于 Win12 网页版'])" onclick="openapp('about');hide_startmenu();">
+				<a oncontextmenu="return showcm(event, 'smlapp', ['about', '关于'])" onclick="openapp('about');hide_startmenu();">
 					<img src="icon/about.svg">
-					<p data-i18n="about.name">关于 Win12 网页版</p>
+					<p data-i18n="about.name">关于</p>
 				</a>
-				<a oncontextmenu="return showcm(event, 'smlapp', ['taskmgr', '任务管理器'])" onclick="openapp('taskmgr');hide_startmenu();">
+				<a oncontextmenu="return showcm(event, 'smlapp', ['taskmgr', '任务'])" onclick="openapp('taskmgr');hide_startmenu();">
 					<img src="icon/taskmgr.png">
-					<p data-i18n="taskmgr.name">任务管理器</p>
+					<p data-i18n="taskmgr.name">任务</p>
 				</a>
 				<a oncontextmenu="return showcm(event, 'smlapp', ['notepad', '记事本'])" onclick="openapp('notepad');hide_startmenu();">
 					<img src="icon/notepad.svg">
 					<p data-i18n="notepad.name">记事本</p>
 				</a>
-				<a oncontextmenu="return showcm(event, 'smlapp', ['copilot', 'Windows 12 Copilot'])" onclick="$('#copilot').toggleClass('show');hide_startmenu();">
+				<a oncontextmenu="return showcm(event, 'smlapp', ['copilot', 'Mbilse Copilot'])" onclick="$('#copilot').toggleClass('show');hide_startmenu();">
 					<img src="icon/copilot.svg">
-					<p>Windows 12 Copilot</p>
+					<p>Mbilse Copilot</p>
 				</a>
-				<a oncontextmenu="return showcm(event, 'smlapp', ['edge', 'Microsoft Edge'])" onclick="openapp('edge');hide_startmenu();">
+				<a oncontextmenu="return showcm(event, 'smlapp', ['edge', '浏览'])" onclick="openapp('edge');hide_startmenu();">
 					<img src="icon/edge.svg">
-					<p data-i18n="edge.name">Microsoft Edge</p>
+					<p data-i18n="edge.name">浏览</p>
 				</a>
 				<a oncontextmenu="return showcm(event, 'smlapp', ['msstore', 'Microsoft Store'])" onclick="openapp('msstore');hide_startmenu();">
 					<img src="icon/msstore.svg">
