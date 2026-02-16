@@ -253,9 +253,9 @@
 					<img src="icon/defender.svg">
 					<p data-i18n="defender.name">安全中心</p>
 				</a>
-				<a oncontextmenu="return showcm(event, 'smlapp', ['word', 'Word Preview'])" onclick="openapp('word');hide_startmenu();">
+				<a oncontextmenu="return showcm(event, 'smlapp', ['word', 'Word'])" onclick="openapp('word');hide_startmenu();">
 					<img src="icon/word.svg">
-					<p data-i18n="word.name">Word Preview</p>
+					<p data-i18n="word.name">Word</p>
 				</a>
 				<p class="text" data-i18n="stmenu-webapp">Web 应用</p>
 				<a oncontextmenu="return showcm(event, 'smlapp', ['minesweeper', 'Windows 12 minesweeper'])" onclick="openapp('minesweeper');hide_startmenu()">
@@ -274,9 +274,9 @@
 					<img src="icon/wsa.png">
 					<p data-i18n="wsa.name">适用于 Android™ 的 Windows 子系统</p>
 				</a>
-				<a oncontextmenu="return showcm(event, 'smlapp', ['windows12', 'Windows 12'])" onclick="openapp('windows12');hide_startmenu();">
+				<a oncontextmenu="return showcm(event, 'smlapp', ['windows12', 'Mbilse OS'])" onclick="openapp('windows12');hide_startmenu();">
 					<img src="icon/logo.svg">
-					<p>Windows 12</p>
+					<p>Mbilse OS</p>
 				</a>
 			</list>
 		</div>
@@ -315,12 +315,12 @@
 						">
 							<i class="bi bi-arrows-angle-expand"></i>
 						</a>
-						<a class="a btn btn-icon power" win12_title="电源" onclick="$(this).toggleClass('show');">
+						<a class="a btn btn-icon power" win12_title="底操作" onclick="$(this).toggleClass('show');">
 							<span class="bi bi-power"></span>
 							<i class="bi bi-power" onclick="$('#start-menu').removeClass('show');
-							setTimeout(() => {window.location='shutdown.html';},200);" win12_title="关机"></i>
+							setTimeout(() => {window.location='shutdown.html';},200);" win12_title="关闭"></i>
 							<i class="bi bi-arrow-counterclockwise" onclick="$('#start-menu').removeClass('show');
-							setTimeout(() => {window.location='reload.html';},200);" win12_title="重启"></i>
+							setTimeout(() => {window.location='reload.html';},200);" win12_title="重回"></i>
 						</a>
 						
 					</div>
@@ -329,15 +329,15 @@
 			<div class="pinned">
 				<!-- 已固定 卡片 -->
 				<div class="title">
-					<p data-i18n="stmenu-pinned">已固定</p>
+					<p data-i18n="stmenu-pinned">固定了</p>
 					<div>
-						<a class="a more-btn"><span data-i18n="stmenu-allapp">所有应用</span> <i class="bi bi-chevron-right"></i></a>
+						<a class="a more-btn"><span data-i18n="stmenu-allapp">所有App</span> <i class="bi bi-chevron-right"></i></a>
 					</div>
 				</div>
 				<div class="apps">
 					<a class="a sm-app enable calc" onclick="openapp('calc');hide_startmenu();" oncontextmenu="return showcm(event,'smapp',['calc','计算器'])">
 						<img src="icon/calc.svg">
-						<p data-i18n="calc.name">计算器</p>
+						<p data-i18n="calc.name">计算</p>
 					</a>
 					<a class="a sm-app enable camera" onclick="apps.camera.notice();hide_startmenu();" oncontextmenu="return showcm(event,'smapp',['camera', '相机'])">
 						<img src="icon/camera.svg">
@@ -345,43 +345,43 @@
 					</a>
 					<a class="a sm-app enable" onclick="shownotice('feedback');">
 						<img src="icon/feedback.svg">
-						<p data-i18n="feedback.name">反馈中心</p>
+						<p data-i18n="feedback.name">反馈</p>
 					</a>
-					<a class="a sm-app enable about" onclick="openapp('about');hide_startmenu();" oncontextmenu="return showcm(event,'smapp',['about','关于 Win12 网页版'])">
+					<a class="a sm-app enable about" onclick="openapp('about');hide_startmenu();" oncontextmenu="return showcm(event,'smapp',['about','关于'])">
 						<img src="icon/about.svg">
-						<p data-i18n="about.name">关于 Win12 网页版</p>
+						<p data-i18n="about.name">关于</p>
 					</a>
-					<a class="a sm-app enable explorer" onclick="openapp('explorer');hide_startmenu();" oncontextmenu="return showcm(event,'smapp',['explorer','文件资源管理器'])">
+					<a class="a sm-app enable explorer" onclick="openapp('explorer');hide_startmenu();" oncontextmenu="return showcm(event,'smapp',['explorer','文件'])">
 						<img src="icon/explorer.svg">
-						<p data-i18n="explorer.name">文件资源管理器</p>
+						<p data-i18n="explorer.name">文件</p>
 					</a>
 					<a class="a sm-app enable notepad" onclick="openapp('notepad');hide_startmenu();" oncontextmenu="return showcm(event,'smapp',['notepad','记事本'])">
 						<img src="icon/notepad.svg">
 						<p data-i18n="notepad.name">记事本</p>
 					</a>
-					<a class="a sm-app enable setting" onclick="openapp('setting');hide_startmenu();" oncontextmenu="return showcm(event,'smapp',['setting','设置'])">
+					<a class="a sm-app enable setting" onclick="openapp('setting');hide_startmenu();" oncontextmenu="return showcm(event,'smapp',['setting','设定'])">
 						<img src="icon/setting.svg">
-						<p data-i18n="setting.name">设置 </p>
+						<p data-i18n="setting.name">设定</p>
 					</a>
-					<a class="a sm-app enable defender" onclick="openapp('defender');hide_startmenu();" oncontextmenu="return showcm(event,'smapp',['defender','Windows 安全中心'])">
+					<a class="a sm-app enable defender" onclick="openapp('defender');hide_startmenu();" oncontextmenu="return showcm(event,'smapp',['defender','安全'])">
 						<img src="icon/defender.svg">
-						<p data-i18n="defender.name">Windows 安全中心</p>
+						<p data-i18n="defender.name">安全</p>
 					</a>
-					<a class="a sm-app enable msstore" onclick="openapp('msstore');hide_startmenu();" oncontextmenu="return showcm(event, 'smapp', ['msstore', 'Microsoft Store'])">
+					<a class="a sm-app enable msstore" onclick="openapp('msstore');hide_startmenu();" oncontextmenu="return showcm(event, 'smapp', ['msstore', 'Store'])">
 						<img src="icon/msstore.svg">
-						<p>Microsoft Store</p>
+						<p>Store</p>
 					</a>
-					<a class="a sm-app enable edge" onclick="openapp('edge');hide_startmenu();" oncontextmenu="return showcm(event,'smapp',['edge','Microsoft Edge'])">
+					<a class="a sm-app enable edge" onclick="openapp('edge');hide_startmenu();" oncontextmenu="return showcm(event,'smapp',['edge','浏览'])">
 						<img src="icon/edge.svg">
-						<p data-i18n="edge.name">Microsoft Edge</p>
+						<p data-i18n="edge.name">浏览</p>
 					</a>
-					<a class="a sm-app enable windows12" onclick="openapp('windows12');hide_startmenu();" oncontextmenu="return showcm(event,'smapp',['windows12','Windows 12'])">
+					<a class="a sm-app enable windows12" onclick="openapp('windows12');hide_startmenu();" oncontextmenu="return showcm(event,'smapp',['windows12','Mbilse OS'])">
 						<img src="icon/logo.svg">
-						<p>Windows 12</p>
+						<p>Mbilse OS</p>
 					</a>
-					<a class="a sm-app enable terminal" onclick="openapp('terminal');hide_startmenu();" oncontextmenu="return showcm(event,'smapp',['terminal','终端'])">
+					<a class="a sm-app enable terminal" onclick="openapp('terminal');hide_startmenu();" oncontextmenu="return showcm(event,'smapp',['terminal','Command'])">
 						<img src="icon/terminal.svg">
-						<p data-i18n="terminal.name">终端</p>
+						<p data-i18n="terminal.name">Command</p>
 					</a>
 				</div>
 			</div>
