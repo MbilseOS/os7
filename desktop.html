@@ -46,7 +46,7 @@
 	<base target="_blank">
 
 	<title>Mbilse OS</title>
-	<meta name="description" content="Windows 12 网页版是一个在线体验 Windows 12 操作系统的开源项目, 使用 HTML、CSS 和 JavaScript 模拟 Windows 12 操作系统的界面与交互。">
+	
 </head>
 
 
@@ -90,7 +90,7 @@
 			<svg style="position:absolute;left:calc(50% - 25px);top:72%;" width="50px" height="50px" viewBox="0 0 16 16">
 				<circle cx="8px" cy="8px" r="7px"></circle>
 			</svg>
-			<p id="loadbackupdate" style="position:absolute;top:calc(72% + 55px);left:0;width:100%;text-align:center;color:#fff;font-size: 25px;display:none;" data-i18n="updating">休对故人思故国，且将新火试新茶<br>正在更新</p>
+			<p id="loadbackupdate" style="position:absolute;top:calc(72% + 55px);left:0;width:100%;text-align:center;color:#fff;font-size: 25px;display:none;" data-i18n="updating">休对故人思故国，且将新火试新茶<br>更新中...</p>
 		</loading>
 		<script>
 			setTimeout(() => {
@@ -108,7 +108,7 @@
     </div>
 	<div id="loginback">
 		<div class="user"></div>
-		<div class="name">Administrator</div>
+		<div class="name">Admin</div>
 		
 		<div id="login" onclick="$(this).css('opacity','0');$('#login-welc').css('opacity','1');
 			setTimeout(() => {
@@ -123,7 +123,7 @@
 					document.querySelector('audio#startup-music').play();
 				}
 			}, 2000);" data-i18n="login">
-			登录
+			进入
 		</div>
 		<div id="login-welc" style="opacity: 0;">
 			<loading>
@@ -134,7 +134,7 @@
 			<p style="font-size: 22px;
             color: #fff;
 			margin-top: 5px;
-            text-align: center;" data-i18n="welcome">欢迎</p>
+            text-align: center;" data-i18n="welcome">进入中...</p>
 		</div>
 		<list class="langselect new">
 			<span class="text" style="font-size: 22px;"><i class="bi bi-globe2"></i></span>
@@ -144,9 +144,7 @@
 				else
 					localStorage.setItem('lang','en-US');
 				window.location.href='';">Default language of the browser</a>
-			<a class="a zh-CN" onclick="localStorage.setItem('lang','zh-CN');window.location.href='';">简体中文</a>
-			<a class="a zh-TW" onclick="localStorage.setItem('lang','zh-TW');window.location.href='';">繁體中文</a>
-			<a class="a en" onclick="localStorage.setItem('lang','en');window.location.href='';">English</a>
+			
 		</list>
 		<a class="power" onclick="$(this).addClass('show')">
 			<!-- <i class="bi bi-translate" onclick="
@@ -157,7 +155,7 @@
 				}
 				window.location.href='';
 				" win12_title="Toggle language"></i> -->
-			<i class="bi bi-power" onclick="setTimeout(() => {window.location='shutdown.html';}, 200);" win12_title="关机"></i>
+			<i class="bi bi-power" onclick="setTimeout(() => {window.location='shutdown.html';}, 200);" win12_title="关闭"></i>
 			<i class="bi bi-arrow-counterclockwise" onclick="setTimeout(() => {window.location='reload.html';}, 200);" win12_title="重启"></i>
 		</a>
 	</div>
