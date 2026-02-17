@@ -1335,7 +1335,7 @@
 						<p class="s-icon" style="font-size: 70px;margin: -8px 15px 0px 20px;"></p>
 						<div>
 							<p style="color: #7f7f7f;margin:-8px 0 -5px 0;">WLAN 已连接</p>
-							<p style="font-size: 28px;text-overflow: ellipsis;white-space: nowrap;">PingGai - 5G</p>
+							<p style="font-size: 28px;text-overflow: ellipsis;white-space: nowrap;">Network-5G</p>
 							<a style="color: var(--href);text-decoration: underline !important;;" class="a">断开</a>
 						</div>
 					</div>
@@ -1461,9 +1461,9 @@
 						</a>
 					</div>
 					<div class="setting-list">
-						<a><icon></icon><div><p>您的账号</p><p>订阅、账单等</p></div><i class="bi bi-chevron-right"></i></a>
-						<a><icon></icon><div><p>您的信息</p><p>电子邮件、日历和联系人使用的帐户</p></div><i class="bi bi-chevron-right"></i></a>
-						<a><icon></icon><div><p>登入选号</p><p>安全密钥、密码、动态头</p></div><i class="bi bi-chevron-right"></i></a>
+						<a><icon></icon><div><p>账号</p><p>订阅、账单等</p></div><i class="bi bi-chevron-right"></i></a>
+						<a><icon></icon><div><p>信息</p><p>电子邮件、日历和联系人使用的帐户</p></div><i class="bi bi-chevron-right"></i></a>
+						<a><icon></icon><div><p>选号</p><p>安全密钥、密码、动态头</p></div><i class="bi bi-chevron-right"></i></a>
 						<a><icon></icon><div><p>Mail和账号</p><p>电子邮件、日历和联系人使用的帐户</p></div><i class="bi bi-chevron-right"></i></a>
 						<a><icon></icon><div><p>家</p><p>管理您的家庭群组、编辑帐户类型和设备权限</p></div><i class="bi bi-chevron-right"></i></a>
 						<a><icon></icon><div><p>备份</p><p>备份您的文件、应用程序、首选项以跨设备恢复它们</p></div><i class="bi bi-chevron-right"></i></a>
@@ -1535,7 +1535,7 @@
 								<p class="notice">检查中...</p>
 								<p class="detail"></p>
 							</div>
-							<div><a class="a button disabled" style="font-size: 16px;margin-top: -7.5px; opacity: 0.5; pointer-events: none;">检查更新</a></div>
+							<div><a class="a button disabled" style="font-size: 16px;margin-top: -7.5px; opacity: 0.5; pointer-events: none;">查新</a></div>
 						</div>
 					</div>
 					<div class="setting-list">
@@ -1772,39 +1772,7 @@
 			<div class="cnt update">
 				<h1 class="tit" data-i18n="about.update.name"><span></span>更新记录</h1>
 				<div style="margin-left: 20px;">
-					<details><summary><span>v10.0.9</span> 修复了一些已知问题</summary><p>
-						&emsp;&emsp;-(更新来自 @tangyuan0821)<br>
-
-					<details><summary><span>v10.0.1</span> 繁體中文語言支持</summary><p>
-						&emsp;&emsp;-(更新来自 @tjy-gitnub)<br>
-						&emsp;&emsp;-添加繁中語言支持<br>
-						&emsp;&emsp;-细节优化和修复<br>
-						&emsp;&emsp;无偿请求帮助我们翻译此项目！详见<a class="jump" href="https://github.com/tjy-gitnub/win12">项目主页</a><br>
-					</p></details>
-					<details><summary><span>v10.0.0</span> AI Copilot 回归，走向国际化</summary><p>
-						&emsp;&emsp;-(更新来自 @NB-Group)<br>
-						&emsp;&emsp;重启AI Copilot！<br>
-						&emsp;&emsp;-(更新来自 @tjy-gitnub)<br>
-						&emsp;&emsp;-部分英语翻译<br>
-						&emsp;&emsp;-细节优化和修复<br>
-					</p></details>
-					<details><summary><span>v9.2.1</span> 修复一些问题</summary><p>
-						&emsp;&emsp;-(更新来自 @tjy-gitnub)<br>
-						&emsp;&emsp;-拆解 desktop.js<br>
-						&emsp;&emsp;-细节优化和修复<br>
-					</p></details>
-					<details><summary><span>v9.2.0</span> 整理</summary><p>
-						&emsp;&emsp;-(更新来自 @tjy-gitnub)<br>
-						&emsp;&emsp;修改大量积累的 bug<br>
-						&emsp;&emsp;-关于开始菜单全屏的问题<br>
-						&emsp;&emsp;-关于小组件的大量问题<br>
-						&emsp;&emsp;-标签页的移动端适配问题<br>
-						&emsp;&emsp;-天气小组件 api 失效的问题<br>
-						&emsp;&emsp;新增和完善部分内容<br>
-						&emsp;&emsp;-鼠标中键关闭标签页<br>
-						&emsp;&emsp;-登录界面的美化<br>
-						&emsp;&emsp;-细节优化和修复<br>
-					</p></details>
+					
 					<details><summary><span>v9.1.2</span> 任务栏预览</summary><p>
 						&emsp;&emsp;-(更新来自 @fzlzjerry)<br>
 						&emsp;&emsp;-加入任务栏窗口预览<br>
@@ -1845,7 +1813,7 @@
 		<div class="resize-bar"></div>
 		<div class="titbar">
 			<img src="icon/notepad.svg" class="icon">
-			<p data-i18n="notepad.name">记事本</p>
+			<p data-i18n="notepad.name">记事</p>
 			<div>
 				<a class="a wbtg red" onclick="hidewin('notepad');hidewin('notepad-fonts', 'configs')"><i
 						class="bi bi-x-lg"></i></a>
@@ -1858,14 +1826,14 @@
 		</div>
 		<div class="content" id="win-notepad">
 			<div class="tool">
-				<a class="a" onmouseover="showdp(this,'notepad.file',null)" onmouseleave="hidedp()" data-i18n="notepad.file">文件</a>
+				<a class="a" onmouseover="showdp(this,'notepad.file',null)" onmouseleave="hidedp()" data-i18n="notepad.file">文稿</a>
 				<a class="a" onmouseover="showdp(this,'notepad.edit',null)" onmouseleave="hidedp()" data-i18n="notepad.edit">编辑</a>
 				<a class="a" onmouseover="showdp(this,'notepad.view',null)" onmouseleave="hidedp()" data-i18n="notepad.format">格式</a>
 			</div>
 			<div class="text-box" contenteditable="true" spellcheck="false">
-				<p>在此输入...</p>
+				<p>输入...</p>
 			</div>
-			<a href="" download="未命名.html" style="opacity: 0;" class="save">另存为</a>
+			<a href="" download="默认名字.html" style="opacity: 0;" class="save">另存</a>
 		</div>
 	</div>
 	<!-- 这个东西还有用吗？？（ -->
@@ -1960,7 +1928,7 @@
 		<div class="resize-bar"></div>
 		<div class="titbar">
 			<img src="icon/terminal.svg" class="icon">
-			<p data-i18n="terminal.name">终端</p>
+			<p data-i18n="terminal.name">Command</p>
 			<div>
 				<a class="a wbtg red" onclick="hidewin('terminal')"><i class="bi bi-x-lg"></i></a>
 				<a class="a wbtg max" onclick="maxwin('terminal')"><i class="bi bi-app"></i></a>
@@ -1973,12 +1941,12 @@
 
 		<div class="content" id="win-terminal" onmouseup="$('#win-terminal input').focus();" ontouchend="$('#win-terminal input').focus();">
             <pre>
-				Microsoft Windows [版本 12.0.39035.7324]
-				(c) Microsoft Corporation。保留所有权利。
+				Mbilse Shell(MSH)
+				Copyright MbilseLLC all right reserved.
 			</pre>
 			<pre class="text-cmd"></pre>
 			<pre
-				style="display: flex"><span class="prompt">C:\Windows\System32> </span><input type="text" onkeyup="if (event.keyCode == 13) { apps.terminal.run(); }"></pre>
+				style="display: flex"><span class="prompt">[Mbilse]:/home> </span><input type="text" onkeyup="if (event.keyCode == 13) { apps.terminal.run(); }"></pre>
 		</div>
 	</div>
 	<div class="window python terminal-apps">
@@ -1998,7 +1966,7 @@
 
 		<div class="content" id="win-python" onmouseup="$('#win-python input').focus();" ontouchend="$('#win-python input').focus();">
             <pre>
-				Python 3.10.2  [MSC v.1912 64 bit (AMD64)] :: Anaconda, Inc. on win32
+				Python 3.10.2  [MSC v.1912 64 bit (AMD64)] :: Anaconda, Inc. on Mbilseos
 				Type "help", "copyright", "credits" or "license" for more information.
 			</pre>
 			<pre class="text-cmd"></pre>
@@ -2010,7 +1978,7 @@
 		<div style="height:3px;width:100%;display: none;" id="over-bar" onmouseover="if(apps.edge.fuls){$('.edge>.titbar').show();$('.edge>.content>.tool').show()}" onmouseleave="if(apps.edge.fuls&&(apps.edge.b1||apps.edge.b2)){$('.edge>.titbar').hide();$('.edge>.content>.tool').hide()}"></div>
 		<div class="titbar" onmouseleave="apps.edge.b1=false;" onmouseover="apps.edge.b1=true;" id="edge-titbar">
 			<img src="icon/edge.svg" class="icon">
-			<p style="display: none;">Microsoft Edge</p>
+			<p style="display: none;">浏览</p>
 			<div class="tabs">
 			</div>
 			<div>
@@ -2036,9 +2004,9 @@
 					<i class="bi bi-arrow-clockwise"></i>
 				</a>
 				<input type="text" onkeyup="if(event.keyCode==13&&$(this).val()!=''){apps.edge.goto($(this).val())}"
-					placeholder="在必应中搜索，或输入一个网址" class="url" spellcheck="false" id="edge-path" data-i18n-attr="placeholder" data-i18n-key="edge.schbing">
+					placeholder="搜索或输入网址" class="url" spellcheck="false" id="edge-path" data-i18n-attr="placeholder" data-i18n-key="edge.schbing">
 				<input type="text" onkeyup="if(event.keyCode==13&&$(this).val()!=''){m_tab.rename('edge',$(this).val());}"
-					placeholder="为标签页命名" class="rename" spellcheck="false"  data-i18n-attr="placeholder" data-i18n-key="edge.rename">
+					placeholder="标签页命名" class="rename" spellcheck="false"  data-i18n-attr="placeholder" data-i18n-key="edge.rename">
 				<a class="a">
 					<i class="bi bi-info-circle" win12_title="浏览器只能访问允许嵌套的网站。由于规则限制无法获取网页标题，请右键标签页手动命名"></i>
 				</a>
@@ -2061,7 +2029,7 @@
 		    </div>
 			<div id="save-bar" style="margin:10px;margin-top: 3px;white-space: nowrap;overflow-x: scroll;">
 				<!--收藏夹-->
-				<a onclick="apps.edge.goto('https://tjy-gitnub.github.io/')" win12_title="https://tjy-gitnub.github.io/" class="save-item"><i class="bi bi-file-earmark"></i>星源</a>
+				<a onclick="apps.edge.goto('https://tjy-gitnub.github.io/')" win12_title="https://mbilse.github.io/" class="save-item"><i class="bi bi-file-earmark"></i>Mbilse</a>
 				<a onclick="apps.edge.goto('https://www.bing.com')" win12_title="https://www.bing.com" class="save-item"><i class="bi bi-file-earmark"></i>Bing</a>
 				<style>
 					#save-bar{
@@ -2127,7 +2095,7 @@
 		<div class="resize-bar"></div>
 		<div class="titbar">
 			<img src="icon/copilot.svg" class="icon">
-			<p>Windows 12 Copilot</p>
+			<p>Mbilse Copilot</p>
 			<div>
 				<a class="a wbtg red" onclick="hidewin('copilot')"><i class="bi bi-x-lg"></i></a>
 				<a class="a wbtg max" onclick="maxwin('copilot')"><i class="bi bi-app"></i></a>
@@ -2226,7 +2194,7 @@
 		<div class="resize-bar"></div>
 		<div class="titbar">
 			<img src="icon/logo.svg" class="icon">
-			<p>Windows 12</p>
+			<p>MbilseOS</p>
 			<div>
 				<a class="a wbtg red" onclick="hidewin('windows12')"><i class="bi bi-x-lg"></i></a>
 				<a class="a wbtg max" onclick="maxwin('windows12')"><i class="bi bi-app"></i></a>
@@ -2260,7 +2228,7 @@
 				</div>
 			</div>
 			<p data-i18n="camera.notice.txt">
-				&emsp;&emsp;欢迎使用“相机”应用！本应用由 User782Tec 开发， tjy-gitnub 维护。<br />
+				&emsp;&emsp;欢迎使用“相机”应用！<br />
 				&emsp;&emsp;在使用中，此应用将会获取访问您摄像头的权限（用于进行拍摄照片等操作）。此应用不会将任何您的个人信息（包括所拍摄的照片）上传至服务器，更不会泄露给他人。<br />
 				&emsp;&emsp;若您不同意上述协议，则将不能使用此应用。
 			</p>
